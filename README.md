@@ -61,4 +61,7 @@ jettyRun{
     contextPath = "test"
     httpPort = 8080
 }
+# command
+$ gradle or ./gradlew jettyRun
+
 
