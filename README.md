@@ -7,6 +7,7 @@ Select project --> New --> Module (Java-gradle) --> (click Add as and given canc
 
 
 ## Project build.gradle (common gradle)
+apply from: 'dependencies.gradle'
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'application'
