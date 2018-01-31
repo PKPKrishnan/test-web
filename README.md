@@ -12,6 +12,9 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'application'
 
+# Run Jetty
+apply plugin: 'jetty'
+
 repositories {
     mavenCentral()
 }
@@ -23,6 +26,13 @@ dependencies {
     compile 'com.sun.jersey:jersey-bundle:1.18.1'
     compile 'org.codehaus.jettison:jettison:1.3.6'
     compile 'commons-codec:commons-codec:1.9'
+}
+
+# Run Jetty
+// Embeded Jetty for testing
+jettyRun{
+    contextPath = "test"
+    httpPort = 8080
 }
 
 
@@ -39,3 +49,14 @@ dependencies {
         spring_security:'org.springframework.security:spring-security-core:3.1.4.RELEASE',
         spring_data: 'org.springframework.data:spring-data-mongodb:1.1.1.RELEASE',
 ]
+
+
+## Run Jetty
+apply plugin: 'jetty'
+
+// Embeded Jetty for testing
+jettyRun{
+    contextPath = "test"
+    httpPort = 8080
+}
+
