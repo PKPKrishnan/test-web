@@ -42,7 +42,9 @@ dependencies {
     compile libraries.spring_security
     compile libraries.spring_data
 }
- ##dependencies.gradle
+ 
+
+## dependencies.gradle
  def spring_version = '3.2.0.RELEASE'
  project.ext.libraries = [
         spring_core: "org.springframework:spring-core:$spring_version",
