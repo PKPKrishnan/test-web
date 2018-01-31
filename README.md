@@ -33,10 +33,8 @@ dependencies {
 }
  ##dependencies.gradle
  def spring_version = '3.2.0.RELEASE'
-  project.ext.libraries = [
+ project.ext.libraries = [
         spring_core: "org.springframework:spring-core:$spring_version",
         spring_security:'org.springframework.security:spring-security-core:3.1.4.RELEASE',
         spring_data: 'org.springframework.data:spring-data-mongodb:1.1.1.RELEASE',
-        jersey: 'com.sun.jersey:jersey-bundle:1.18.1',
-        jettison: 'org.codehaus.jettison:jettison:1.3.6'
 ]
